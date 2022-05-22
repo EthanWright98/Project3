@@ -6,20 +6,21 @@ app = Flask(__name__)
 def post_chance():
     generate = request.data.decode('utf-8')
     favour= generate.split()
-    if chance[0] == 'Claymore' and chance[0] == 'The unbroken':
-        favour = 'Thumbs up, you survive'
-    elif chance[1] == 'Fists' and chance[1] == 'The unfortunate':
-        favour = 'Thumbs down, you have been defeated'
-    elif chance[2] == 'Spear' and chance[2] == 'The tribesman':
-        favour = 'Thumbs up, you survive'
-    elif chance[3] == 'Battle axe' and chance[3] == 'The barbarian':
-        favour = 'Thumbs up, you survive'
-    elif chance[4] == 'Bow' and chance[4] == 'The Ranger':
-        favour = 'Thumbs down, you have been defeated'
+    print(favour)
+    if favour[0] == 'Claymore' and int(favour[1]) > 3:
+        chance = 'Thumbs up, you survived'
+    elif favour[0] == 'Fists' and int(favour[1]) > 9:
+        chance = 'Thumbs up, you survived'
+    elif favour[0] == 'Spear' and int(favour[1]) > 3:
+        chance = 'Thumbs up, you survived'
+    elif favour[0] == 'Flail' and int(favour[1]) > 6:
+        chance = 'Thumbs up, you survived'
+    elif favour[0] == 'Bow' and int(favour[1]) > 0:
+        chance = 'Thumbs up, you survived'
     else:
-        favour = "Goodbye"
+        chance = "Thumbs down, you have perished"
 
-        return Response (task, mimetype = 'text/plain')
+    return Response (chance, mimetype = 'text/plain')
 
 if __name__ == '__main__':
     app.run(port=5002, debug=True, host='0.0.0.0')
