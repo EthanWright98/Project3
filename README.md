@@ -88,6 +88,12 @@ pipeline {
  
  Nginx is used as a load balancer spreading traffic to the application across different servers, increasing the application speed and its potential for scalability
  
+ ## Feature branch model
+ ![Feature branch model](https://user-images.githubusercontent.com/101715806/169779622-736615d2-b63f-4477-95d8-075e3a23a6f7.PNG)
+
+I used the feature branch model thorughout the project for different parts of the project, using a dev branch as the worker branch and branches off of that which were worked on, this allowed me to track progress and not push any mistakes straight onto the main branch
+ 
+ 
 ## Future improvements
 
 Implement full testing into the app allowing for secuirity and robustness
