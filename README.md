@@ -84,6 +84,10 @@ pipeline {
  
  Ansible was used along docker with an inventory.yaml and a playbook.yaml to set up roles for the VM's
  
+ ## Nginx
+ 
+ Nginx is used as a load balancer spreading traffic to the application across different servers, increasing the application speed and its potential for scalability
+ 
 ## Future improvements
 
 Implement full testing into the app allowing for secuirity and robustness
