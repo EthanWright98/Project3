@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  service1:
+    image: ethanwright98/second-project1:latest
+    build: ./Project3/api1/application
+    ports:
+    - target: 5000
+      published: 5000
+      protocol: tcp
+  service2:
+    image: ethanwright98/second-project2:latest
+    build: ./Project3/api2/application
+    ports:
+    - target: 5001
+      published: 5001
+      protocol: tcp
+  service3:
+    image: ethanwright98/second-project3:latest
+    build: ./Project3/api3/application
+    ports:
+    - target: 5002
+      published: 5002
+      protocol: tcp
+  service4:
+    image: ethanwright98/second-project4:latest
+    build: ./Project3/api4/application
+    ports:
+    - target: 5003
+      published: 5003
+      protocol: tcp
