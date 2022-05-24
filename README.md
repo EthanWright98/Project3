@@ -82,6 +82,17 @@ pipeline {
     }
 }
 
+
+## Docker 
+
+Docker is used to containerise the apis within the application and push them up to docker as images. This was done by creating a dockerfile within each of the apis.
+
+
+![docker images](https://user-images.githubusercontent.com/101715806/170139380-e735d53b-c862-4bad-966a-1ed48d20638f.PNG)
+
+
+
+
  ## Docker Swarm and Ansible 
  
 Docker swarm was used within the project across different VMS to configure the docker manager and worker being used as an orchstration tool to deploy the app
