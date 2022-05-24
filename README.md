@@ -29,7 +29,7 @@ api3 - Returns a chance of survival based on the weapon and how good it is and w
 Here is my risk assesment for the project with dates ive updated regulary to monitor the potential risks my project faces and ones that i might encounter throughout the project
 
 ## Trello Board
-![Project 2 Trello](https://user-images.githubusercontent.com/101715806/169771715-50554012-5ce5-436a-9d5d-b77bec306967.PNG)
+
 
 A trello board was used thorughout the sprint to track progression thorugh the project to see which jobs were complete and which were still in progess, to further improve this trello board i would colour co ordinated the tasks to make it more user friendly and to see priority of tasks
 
@@ -91,7 +91,7 @@ pipeline {
  Nginx is used as a load balancer spreading traffic to the application across different servers, increasing the application speed and its potential for scalability
  
  ## Feature branch model
- ![Feature branch model](https://user-images.githubusercontent.com/101715806/169779622-736615d2-b63f-4477-95d8-075e3a23a6f7.PNG)
+ 
 
 I used the feature branch model thorughout the project for different parts of the project, using a dev branch as the worker branch and branches off of that which were worked on, this allowed me to track progress and not push any mistakes straight onto the main branch
  
@@ -101,3 +101,5 @@ I used the feature branch model thorughout the project for different parts of th
 Implement full testing into the app allowing for secuirity and robustness
 
 Implent Jenkins properly so it could automate testing and deploy the application
+
+Implent nginx to spread traffic across different VM's
