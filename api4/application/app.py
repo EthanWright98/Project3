@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 @app.route('/weapon/legend', methods = ['GET'])
 def get_gladiator():
-    weapon = requests.get('http://service1:5000/get/weapon').text
-    strength = requests.get('http://service2:5001/get/strength').text
+    weapon = requests.get('http://localhost:5000/get/weapon').text
+    strength = requests.get('http://localhost:5001/get/strength').text
     generate = weapon + ' ' + strength
-    chance = requests.post ('http://service3:5002/post/chance', data = generate).text
+    chance = requests.post ('http://localhost:5002/post/chance', data = generate).text
     return render_template('home.html', title='Gladiator generator', weapon = weapon, strength = strength, chance = chance)
 
 if __name__ == '__main__':
