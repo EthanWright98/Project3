@@ -7,7 +7,6 @@ app = Flask(__name__)
 
 @app.route('/get/strength', methods=['GET'])
 def post_title():
-    print("hello")
     strengthNum = randint(0,10)
     strength = str(strengthNum)
     return Response(strength, mimetype = 'text/plain')
