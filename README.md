@@ -30,6 +30,8 @@ Here is my risk assesment for the project with dates ive updated regulary to mon
 
 ## Trello Board
 
+![Project 2 Trello](https://user-images.githubusercontent.com/101715806/170137324-7c90b8b9-3efd-493f-8973-a49471bbee1f.PNG)
+
 
 A trello board was used thorughout the sprint to track progression thorugh the project to see which jobs were complete and which were still in progess, to further improve this trello board i would colour co ordinated the tasks to make it more user friendly and to see priority of tasks
 
@@ -82,7 +84,7 @@ pipeline {
 
  ## Docker Swarm and Ansible 
  
- Docker swarm was used within the project across different VMS to configure the docker manager and worker being used as an orchstration tool to deploy the app
+Docker swarm was used within the project across different VMS to configure the docker manager and worker being used as an orchstration tool to deploy the app
  
  Ansible was used along docker with an inventory.yaml and a playbook.yaml to set up roles for the VM's
  
@@ -90,15 +92,25 @@ pipeline {
  
  Nginx is used as a load balancer spreading traffic to the application across different servers, increasing the application speed and its potential for scalability
  
+ ## Testing
+ 
+ Testing was carried out on all the apis within the application to make sure the app is working as intended and any bugs or issues with the code can be ironed out to improve the apps strength. Below are images of all the test on my apis.
+ 
+ ![pytest api1](https://user-images.githubusercontent.com/101715806/170138168-6a555200-71c6-4777-84d4-85f56ba0c945.PNG)
+![pytest api2](https://user-images.githubusercontent.com/101715806/170138183-9e9b3753-bac1-420a-b997-554bb3db3cb2.PNG)
+![pytest api3](https://user-images.githubusercontent.com/101715806/170138193-b5b32f7b-ef31-4776-a34e-d217aef8b783.PNG)
+![pytest api4](https://user-images.githubusercontent.com/101715806/170138196-05ab67da-b446-4ef4-a54f-28b8053a3c26.PNG)
+
+ 
  ## Feature branch model
  
+ ![Feature branch model](https://user-images.githubusercontent.com/101715806/170137425-853c65aa-0966-4e54-a57f-b07759043010.PNG)
+
 
 I used the feature branch model thorughout the project for different parts of the project, using a dev branch as the worker branch and branches off of that which were worked on, this allowed me to track progress and not push any mistakes straight onto the main branch
  
  
 ## Future improvements
-
-Implement full testing into the app allowing for secuirity and robustness
 
 Implent Jenkins properly so it could automate testing and deploy the application
 
